@@ -15,12 +15,12 @@ A multi purpose simple admin dashboard
 - Pusher
 - Real time notification
 
-## Client Side
-
-![alt client-side](https://github.com/pkbhuiyan/Multipurpose-Dashboard-Laravel/blob/master/public/image/admin.png)
-
-
 ## Admin Side
 
-![alt admin-side](https://github.com/pkbhuiyan/Multipurpose-Dashboard-Laravel/blob/master/public/image/client.PNG)
+![alt Admin-side](https://github.com/pkbhuiyan/Multipurpose-Dashboard-Laravel/blob/master/public/image/admin.png)
+
+
+## Client Side
+
+![alt Client-side](https://github.com/pkbhuiyan/Multipurpose-Dashboard-Laravel/blob/master/public/image/client.PNG)
 
