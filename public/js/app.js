@@ -83752,7 +83752,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -83763,6 +83763,11 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
 //
 //
 //
@@ -84300,16 +84305,25 @@ var render = function() {
                               _c("td", [_vm._v(_vm._s(o.topping))]),
                               _vm._v(" "),
                               _c("td", [
-                                _c("div", { staticClass: "progress" }, [
-                                  _c("div", {
-                                    staticClass:
-                                      "progress-bar progress-bar-striped progress-bar-animated",
-                                    style: {
-                                      width: _vm.progress(o.status) + "%"
-                                    },
-                                    attrs: { role: "progressbar" }
-                                  })
-                                ])
+                                _vm.progress(o.status) == 100
+                                  ? _c("i", {
+                                      staticClass: "fas fa-check",
+                                      staticStyle: {
+                                        "font-size": "20px",
+                                        color: "green",
+                                        "margin-left": "31px"
+                                      }
+                                    })
+                                  : _c("div", { staticClass: "progress" }, [
+                                      _c("div", {
+                                        staticClass:
+                                          "progress-bar progress-bar-striped progress-bar-animated",
+                                        style: {
+                                          width: _vm.progress(o.status) + "%"
+                                        },
+                                        attrs: { role: "progressbar" }
+                                      })
+                                    ])
                               ])
                             ])
                           })

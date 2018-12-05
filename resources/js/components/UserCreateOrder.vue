@@ -90,7 +90,12 @@
                     
                     
                     <td>
-                       <div class="progress">
+                       <i class="fas fa-check" v-if="progress(o.status) == 100" style="
+                       font-size: 20px;
+                      color: green;
+                      margin-left: 31px;
+                       "></i>
+                       <div class="progress" v-else>
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" :style=" {width: progress(o.status) + '%'}"></div>
                       </div>
                     </td>
