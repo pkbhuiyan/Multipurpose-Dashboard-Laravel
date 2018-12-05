@@ -1,0 +1,43 @@
+
+1.**booking system with client site**
+
+~~ SETUP ~~
+    install pusher through composer -> setup pusher key(.env) + broardcast config file 
+    -> setup EventServiceProvider add event and listeners -> inorder to broadcast to pusher implement ShouldBroadcast in event OrderStatusChanged -> routes -> channel.php
+
+
+
+Client
+
+Create Order
+
+1. Pizza Order
+	-Name
+	-Size
+	-Instruction
+	-Topping(Checkbox)
+
+2. MyOrders
+	-List of Orders(*On click show the information about it real time update)~event listen
+
+
+Admin
+
+1. Orders
+	-Order List(*Change order status on click pop up)~event broadcast
+		-Name
+		-Address
+		-Size
+		-Topping
+		-Instruction
+
+
+
+Work:  	-> Create table  = done
+		-> Insert User Order Data  = done
+		-> show as list in User site  = done
+		-> Show in Admin site = done
+		-> Update Order status in Admin site = done
+		-> Update user site also = done
+		-> make customerName foreign key( will change when user table change)
+		-> notifications 	= done
