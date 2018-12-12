@@ -11,9 +11,9 @@ A multi purpose simple admin dashboard
 - ACL in Laravel
 - Online user list
 - Laravel+VUE Auth
-- Order System
-- Pusher
-- Real time notification
+- CRUD
+- Order/Booking System
+- Pusher (Real time notification)
 
 ## Admin Side
 
